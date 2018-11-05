@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  QFMoudle
 //
-//  Created by 李一平 on 2018/11/5.
+//  Created by 情风 on 2018/11/5.
 //  Copyright © 2018年 qingfengiOS. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "QFRouter.h"
+#import "QFMoudleProtocol.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    /*
+     测试一个严谨的单例，需要重写alloc copy mutableCopy方法
+     */
+    QFRouter *r1 = [QFRouter router];
+    QFRouter *r2 = [[QFRouter alloc]init];
+    QFRouter *r3 = [r1 copy];
+    QFRouter *r4 = [r1 mutableCopy];
+    NSLog(@"\n%p\n%@\n%@\n%@",r1,r2,r3,r4);
+    
+    // Home组件
+    id <MoudleHome>homeMoudle = [[QFRouter router]interfaceForProtocol:@protocol(MoudleHome)];
+    homeMoudle.paramterForHome = @"MoudleHome";
+    UIViewController *homeViewController = homeMoudle.interfaceViewController;
+    UINavigationController *homeNavi = [[UINavigationController alloc]initWithRootViewController:homeViewController];
+    homeNavi.tabBarItem.title = @"首页";
+    homeNavi.tabBarItem.image = [UIImage imageNamed:@"home"];
+    
+    // Me组件
+    id <MoudleMe>meMoudle = [[QFRouter router]interfaceForURL:[NSURL URLWithString:@"MoudleMe://?paramterForMe=ModuleMe"]];
+    UIViewController *meViewConterller = meMoudle.interfaceViewController;
+    UINavigationController *meNavi = [[UINavigationController alloc]initWithRootViewController:meViewConterller];
+    meNavi.tabBarItem.title = @"个人";
+    meNavi.tabBarItem.image = [UIImage imageNamed:@"me"];
+    
+    // tabbr和window
+    UITabBarController *tabbarController = [[UITabBarController alloc]init];
+    tabbarController.viewControllers = @[homeNavi,meNavi];
+    _window.rootViewController = tabbarController;
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+
     return YES;
 }
 

@@ -15,6 +15,12 @@
 		FD9E1DA9218FD41E009E05A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DA8218FD41E009E05A9 /* main.m */; };
 		FD9E1DB3218FD41E009E05A9 /* QFMoudleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DB2218FD41E009E05A9 /* QFMoudleTests.m */; };
 		FD9E1DBE218FD41E009E05A9 /* QFMoudleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DBD218FD41E009E05A9 /* QFMoudleUITests.m */; };
+		FD9E1DD1218FD7BA009E05A9 /* QFRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DD0218FD7BA009E05A9 /* QFRouter.m */; };
+		FD9E1DE1218FDBFA009E05A9 /* MoudleHome.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DDD218FDBFA009E05A9 /* MoudleHome.m */; };
+		FD9E1DE2218FDBFA009E05A9 /* QFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DE0218FDBFA009E05A9 /* QFHomeViewController.m */; };
+		FD9E1DE5218FDC0C009E05A9 /* QFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DE4218FDC0C009E05A9 /* QFDetailViewController.m */; };
+		FD9E1DEA218FDC46009E05A9 /* QFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DE9218FDC46009E05A9 /* QFMeViewController.m */; };
+		FD9E1DEE218FDC79009E05A9 /* MoudleMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9E1DED218FDC79009E05A9 /* MoudleMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,19 @@
 		FD9E1DB9218FD41E009E05A9 /* QFMoudleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFMoudleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9E1DBD218FD41E009E05A9 /* QFMoudleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFMoudleUITests.m; sourceTree = "<group>"; };
 		FD9E1DBF218FD41E009E05A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9E1DCF218FD7BA009E05A9 /* QFRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFRouter.h; sourceTree = "<group>"; };
+		FD9E1DD0218FD7BA009E05A9 /* QFRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFRouter.m; sourceTree = "<group>"; };
+		FD9E1DD3218FD9D0009E05A9 /* QFMoudleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFMoudleProtocol.h; sourceTree = "<group>"; };
+		FD9E1DDC218FDBFA009E05A9 /* MoudleHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoudleHome.h; sourceTree = "<group>"; };
+		FD9E1DDD218FDBFA009E05A9 /* MoudleHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoudleHome.m; sourceTree = "<group>"; };
+		FD9E1DDF218FDBFA009E05A9 /* QFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFHomeViewController.h; sourceTree = "<group>"; };
+		FD9E1DE0218FDBFA009E05A9 /* QFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFHomeViewController.m; sourceTree = "<group>"; };
+		FD9E1DE3218FDC0C009E05A9 /* QFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFDetailViewController.h; sourceTree = "<group>"; };
+		FD9E1DE4218FDC0C009E05A9 /* QFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFDetailViewController.m; sourceTree = "<group>"; };
+		FD9E1DE8218FDC46009E05A9 /* QFMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QFMeViewController.h; sourceTree = "<group>"; };
+		FD9E1DE9218FDC46009E05A9 /* QFMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QFMeViewController.m; sourceTree = "<group>"; };
+		FD9E1DEC218FDC79009E05A9 /* MoudleMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleMe.h; sourceTree = "<group>"; };
+		FD9E1DED218FDC79009E05A9 /* MoudleMe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoudleMe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +120,10 @@
 		FD9E1D98218FD41D009E05A9 /* QFMoudle */ = {
 			isa = PBXGroup;
 			children = (
+				FD9E1DDA218FDBFA009E05A9 /* QFHome */,
+				FD9E1DCE218FD7A2009E05A9 /* QFMe */,
+				FD9E1DCC218FD7A2009E05A9 /* QFProtocol */,
+				FD9E1DCD218FD7A2009E05A9 /* QFRouter */,
 				FD9E1D99218FD41D009E05A9 /* AppDelegate.h */,
 				FD9E1D9A218FD41D009E05A9 /* AppDelegate.m */,
 				FD9E1D9C218FD41D009E05A9 /* ViewController.h */,
@@ -130,6 +153,79 @@
 				FD9E1DBF218FD41E009E05A9 /* Info.plist */,
 			);
 			path = QFMoudleUITests;
+			sourceTree = "<group>";
+		};
+		FD9E1DCC218FD7A2009E05A9 /* QFProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DD3218FD9D0009E05A9 /* QFMoudleProtocol.h */,
+			);
+			path = QFProtocol;
+			sourceTree = "<group>";
+		};
+		FD9E1DCD218FD7A2009E05A9 /* QFRouter */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DCF218FD7BA009E05A9 /* QFRouter.h */,
+				FD9E1DD0218FD7BA009E05A9 /* QFRouter.m */,
+			);
+			path = QFRouter;
+			sourceTree = "<group>";
+		};
+		FD9E1DCE218FD7A2009E05A9 /* QFMe */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DE6218FDC3A009E05A9 /* Moudle */,
+				FD9E1DE7218FDC3A009E05A9 /* Controller */,
+			);
+			path = QFMe;
+			sourceTree = "<group>";
+		};
+		FD9E1DDA218FDBFA009E05A9 /* QFHome */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DDB218FDBFA009E05A9 /* Module */,
+				FD9E1DDE218FDBFA009E05A9 /* Controller */,
+			);
+			path = QFHome;
+			sourceTree = "<group>";
+		};
+		FD9E1DDB218FDBFA009E05A9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DDC218FDBFA009E05A9 /* MoudleHome.h */,
+				FD9E1DDD218FDBFA009E05A9 /* MoudleHome.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FD9E1DDE218FDBFA009E05A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DDF218FDBFA009E05A9 /* QFHomeViewController.h */,
+				FD9E1DE0218FDBFA009E05A9 /* QFHomeViewController.m */,
+				FD9E1DE3218FDC0C009E05A9 /* QFDetailViewController.h */,
+				FD9E1DE4218FDC0C009E05A9 /* QFDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD9E1DE6218FDC3A009E05A9 /* Moudle */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DEC218FDC79009E05A9 /* MoudleMe.h */,
+				FD9E1DED218FDC79009E05A9 /* MoudleMe.m */,
+			);
+			path = Moudle;
+			sourceTree = "<group>";
+		};
+		FD9E1DE7218FDC3A009E05A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E1DE8218FDC46009E05A9 /* QFMeViewController.h */,
+				FD9E1DE9218FDC46009E05A9 /* QFMeViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +290,7 @@
 		FD9E1D8E218FD41C009E05A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QF;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = qingfengiOS;
 				TargetAttributes = {
@@ -262,9 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9E1DE5218FDC0C009E05A9 /* QFDetailViewController.m in Sources */,
+				FD9E1DE2218FDBFA009E05A9 /* QFHomeViewController.m in Sources */,
 				FD9E1D9E218FD41D009E05A9 /* ViewController.m in Sources */,
+				FD9E1DD1218FD7BA009E05A9 /* QFRouter.m in Sources */,
 				FD9E1DA9218FD41E009E05A9 /* main.m in Sources */,
 				FD9E1D9B218FD41D009E05A9 /* AppDelegate.m in Sources */,
+				FD9E1DE1218FDBFA009E05A9 /* MoudleHome.m in Sources */,
+				FD9E1DEA218FDC46009E05A9 /* QFMeViewController.m in Sources */,
+				FD9E1DEE218FDC79009E05A9 /* MoudleMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +543,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.QFMoudle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingfengiOS.www.QFMoudle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.QFMoudle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qingfengiOS.www.QFMoudle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

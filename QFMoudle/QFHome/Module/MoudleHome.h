@@ -1,15 +1,14 @@
 //
-//  ViewController.h
+//  MoudleHome.h
 //  QFMoudle
 //
 //  Created by 情风 on 2018/11/5.
 //  Copyright © 2018年 qingfengiOS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "QFMoudleProtocol.h"
 
-@interface ViewController : UIViewController
-
+@interface MoudleHome : NSObject<MoudleHome>
 
 @end
-

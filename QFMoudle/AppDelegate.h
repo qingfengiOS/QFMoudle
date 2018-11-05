@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  QFMoudle
 //
-//  Created by 李一平 on 2018/11/5.
+//  Created by 情风 on 2018/11/5.
 //  Copyright © 2018年 qingfengiOS. All rights reserved.
 //
 
